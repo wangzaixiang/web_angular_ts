@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS Scope</title>
+    <script src="js/angular.js"></script>
+    <script src="js/demo2.js"></script>
+</head>
+<body ng-app="demo2">
+
+<div ng-controller="Calculator">
+num1:<input ng-model="ctrl.num1" type="number"> <br>
+num2:<input ng-model="ctrl.num2" type="number"><br>
+Operation:
+<input type="radio" ng-model="ctrl.op" value="+">+
+<input type="radio" ng-model="ctrl.op" value="-">-
+<input type="radio" ng-model="ctrl.op" value="*">*
+<input type="radio" ng-model="ctrl.op" value="/">/
+
+<p>result is:<span>{{ctrl.result}}</span>
+</div>
+
+</body>
+</html>
